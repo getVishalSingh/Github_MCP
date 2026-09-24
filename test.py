@@ -1,6 +1,10 @@
-def add_three_numbers(a: int, b: int, c: int) -> int:
-    return a + b + c
+from typing import Sequence
+
+
+def add_numbers(numbers: Sequence[int]) -> int:
+    return sum(numbers)
 
 
 if __name__ == "__main__":
-    print(add_three_numbers(10, 20, 30))
+    values = [10, 20, 30]
+    print(add_numbers(values))
